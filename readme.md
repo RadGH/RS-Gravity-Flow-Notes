@@ -5,7 +5,7 @@ _Adds an admin notes fields to gravity flow entries/workflows. A custom filter a
 
     Contributors: radgh
     Donate link: https://paypal.me/radgh
-    Tags: woocommerce, emails, debugging
+    Tags: gravity flow, gravity forms, administration
     Requires at least: 3.2
     Tested up to: 4.9.8
     Stable tag: 1.0.0
