@@ -1,0 +1,29 @@
+/* A+A Gravity Flow Notes */
+.gfn-admin-notes {
+	width: fit-content;
+}
+
+.gfn-note {
+	padding: 5px;
+	margin: -5px -5px 15px;
+}
+
+.gfn-note.gfn-dirty {
+	background: #fffedb;
+}
+
+.gfn-note.gfn-dirty label:after {
+	content: ' (Changes need to be saved)';
+}
+
+.gfn-note .gfn-label {
+	margin-top: 0;
+}
+
+.gfn-note:last-child {
+	margin-bottom: 0;
+}
+
+#postbox-container-aa-gfn {
+	margin-top: -15px;
+}
