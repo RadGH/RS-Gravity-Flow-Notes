@@ -4,8 +4,12 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 // Admin js
 function rs_gfn_admin_enqueue() {
-	// $version = GFN_VERSION;
-	$version = max( filemtime( GFN_PATH . '/assets/rs-gfn-admin.css' ), filemtime( GFN_PATH . '/assets/rs-gfn-admin.js' ) );
+	if ( !function_exists('get_current_screen') ) return;
+	
+	$screen = get_current_screen();
+	if ( !$screen || $screen->id != 'toplevel_page_gravityflow-inbox' ) return;
+	
+	$version = GFN_VERSION;
 	
 	wp_enqueue_style( 'rs-gfn-admin', GFN_URL . '/assets/rs-gfn-admin.css', array(), $version );
 	wp_enqueue_script( 'rs-gfn-admin', GFN_URL . '/assets/rs-gfn-admin.js', array('jquery'), $version );
